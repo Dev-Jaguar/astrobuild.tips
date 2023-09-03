@@ -1,3 +1,8 @@
 {
-  "extends": "astro/tsconfigs/strict"
+  "extends": "astro/tsconfigs/strict",
+  "include": [
+    "src/**/*.ts", // Ajusta esto según la estructura de tu proyecto
+    "node_modules/@types", // Incluye los tipos instalados
+    "types/**/*.d.ts" // Incluye la carpeta de tipos personalizados
+  ]
 }
